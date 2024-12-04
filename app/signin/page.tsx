@@ -28,7 +28,17 @@ export default function () {
             </div>
 
             <div className="font-bold flex justify-center mt-3">
-                OR
+
+                <div className="font-bold flex justify-center">
+
+                    <div className="inline-flex items-center justify-center w-full relative">
+                        <hr className="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                        <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+                            or
+                        </span>
+                    </div>
+                </div>
+
             </div>
 
             <div className="flex justify-center mt-2">
@@ -40,7 +50,7 @@ export default function () {
             </div>
 
             <div className="flex justify-center mt-2">
-                <button onClick={async() => {
+                <button onClick={async () => {
                     const res = await signIn("github");
                     console.log(res);
                 }}>
